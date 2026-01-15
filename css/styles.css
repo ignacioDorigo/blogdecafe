@@ -168,7 +168,6 @@ img {
         display: grid;
         grid-template-columns: 3fr 1fr;
         gap: 2rem;
-        margin-bottom: 5rem;
     }
 }
 
@@ -253,8 +252,30 @@ li {
 
 /* FOOTER */
 .footer-bg {
+    margin-top: 5rem;
     background-color: var(--colorNegro);
 }
-.footer{
+
+.footer {
     padding: 2rem 0rem;
+}
+
+/* SOBRE NOSOTORS */
+.sobre-nosotros {
+    display: flex;
+    gap: 2rem;
+}
+
+.sobre-nosotros__imagen {
+    flex-grow: 1;
+    flex-basis: 50%;
+}
+
+.sobre-nosotros__texto {
+    flex-grow: 1;
+    flex-basis: 50%;
+}
+
+.sobre-nosotros__texto p:first-of-type {
+    margin: 0;
 }
