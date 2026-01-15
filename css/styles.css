@@ -168,6 +168,7 @@ img {
         display: grid;
         grid-template-columns: 3fr 1fr;
         gap: 2rem;
+        margin-bottom: 5rem;
     }
 }
 
@@ -219,4 +220,41 @@ img {
     background-color: var(--colorNegro);
 }
 
-.boton--secundario {}
+.boton--secundario {
+    background-color: var(--colorPrimario);
+}
+
+li {
+    list-style: none;
+}
+
+.cursos {}
+
+.widget-curso {
+    border-bottom: 1px solid var(--colorGrisClaro);
+    margin-bottom: 2rem;
+    line-height: 1.7;
+}
+
+.widget-curso:last-of-type {
+    border: none;
+    margin-bottom: none;
+}
+
+.widget-curso__informacion {
+    font-family: var(--fuenteHeading);
+    font-weight: regular;
+    color: #000000;
+}
+
+.widget-curso__informacion--bold {
+    font-weight: bold;
+}
+
+/* FOOTER */
+.footer-bg {
+    background-color: var(--colorNegro);
+}
+.footer{
+    padding: 2rem 0rem;
+}
