@@ -84,6 +84,10 @@ img {
     object-fit: cover;
 }
 
+textarea {
+    resize: none;
+}
+
 /*  UTILIDADES */
 
 .no-margin {
@@ -320,6 +324,7 @@ li {
 }
 
 
+
 /* .curso__texto-titulo {} */
 
 .curso__texto {
@@ -362,4 +367,81 @@ li {
 
 .entrada-blog__img:hover img {
     transform: scale(1.1);
+}
+
+/* CONTACTO */
+.contacto__img img {
+    height: 40rem;
+}
+
+.form {
+    width: 90%;
+    position: relative;
+    top: -20rem;
+    background-color: var(--colorBlanco);
+    margin: 0 auto;
+    padding: 5rem 2rem 0rem 2rem;
+    border: 1px solid var(--colorGrisClaro);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(width>=768px) {
+    .campo {
+        flex-direction: row;
+        gap: 2rem;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .campo__label {
+        flex-basis: 10%;
+        margin: 0;
+        padding: 0;
+        line-height: normal;
+    }
+
+    .campo__input {
+        flex-basis: calc(90% - 1rem);
+    }
+
+}
+
+.campo__label {
+    font-weight: bold;
+    font-family: var(--fuenteHeading);
+}
+
+@media(width>=768px) {
+    .campo__label {
+        text-align: end;
+    }
+}
+
+.campo__input {
+    width: 100%;
+    padding: 2rem 2rem;
+    border: 1px solid var(--colorGrisClaro);
+}
+
+.campo:last-of-type {
+    margin-bottom: 3rem;
+}
+
+textarea {
+    height: 15rem;
+}
+
+@media(width>=768px) {
+    .alinear-derecha {
+        align-self: end;
+    }
 }
