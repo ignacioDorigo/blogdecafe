@@ -13,17 +13,20 @@
 
 
 
-    <!-- TIPOGRAFIAS DE GOOGEL FONTS -->
+    <!-- 1. Google Fonts con preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap"
         rel="stylesheet">
 
-    <!-- Normalize -->
-    <link rel="stylesheet" href="css/normalize.css" as="style">
+    <!-- 2. Normalize (Sigue siendo bloqueante porque es pequeño y esencial) -->
+    <link rel="stylesheet" href="css/normalize.css">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css" as="style">
+    <!-- 3. Tu CSS principal cargado de forma asíncrona -->
+    <link rel="preload" href="css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="css/styles.css">
+    </noscript>
 
     <link rel="shortcut icon" href="favicon/bolsa-de-cafe.png" type=" image/x-icon">
 
@@ -77,7 +80,8 @@
             </div>
             <div class="campo">
                 <label for="telefono" class="campo__label">Telefono</label>
-                <input class="campo__input" type="tel" name="telefono" id="telefono" placeholder="Tu número de teléfono">
+                <input class="campo__input" type="tel" name="telefono" id="telefono"
+                    placeholder="Tu número de teléfono">
             </div>
 
             <div class="campo">
