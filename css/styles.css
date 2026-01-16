@@ -308,6 +308,15 @@ li {
 .curso__imagen {
     width: 100%;
     object-fit: cover;
+    overflow: hidden;
+}
+
+.curso__imagen img {
+    transition: transform .4s ease-in-out;
+}
+
+.curso__imagen img:hover {
+    transform: scale(1.1);
 }
 
 
