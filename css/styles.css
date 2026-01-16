@@ -207,6 +207,8 @@ img {
     margin-bottom: 2rem;
     font-size: 1.8rem;
     font-weight: bold;
+    cursor: pointer;
+    border: none;
 }
 
 @media(width>=768px) {
@@ -325,3 +327,15 @@ li {
 .curso__texto-cupo {}
 
 .curso__texto-descripcion {}
+
+@media(width>=768px) {
+    .boton-curso {
+        display: flex;
+        justify-self: end;
+        transition: .3s all ease-in-out;
+    }
+
+    .boton-curso:hover {
+        background-color: #603e30;
+    }
+}
