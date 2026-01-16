@@ -279,3 +279,49 @@ li {
 .sobre-nosotros__texto p:first-of-type {
     margin: 0;
 }
+
+/* CURSOS */
+.cursos {}
+
+@media(width>=768px) {
+    .curso {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+.curso {
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--colorGrisClaro);
+    margin-bottom: 3rem;
+}
+
+.curso:last-of-type {
+    border-bottom: none;
+    margin: 0;
+}
+
+.curso__imagen {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.curso__texto-titulo {}
+
+.curso__texto-precio {
+    margin: 0;
+}
+
+.curso__texto-precio--bold,
+.curso__texto-cupo--bold {
+    font-weight: bold;
+    font-family: var(--fuenteHeading);
+
+}
+
+.curso__texto-cupo {}
+
+.curso__texto-descripcion {}
