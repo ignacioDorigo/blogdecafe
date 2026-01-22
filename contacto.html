@@ -71,22 +71,30 @@
 
             <div class="campo campo-1">
                 <label for="nombre" class="campo__label">Nombre</label>
-                <input class="campo__input" type="text" name="nombre" id="nombre" placeholder="Tu nombre completo">
+                <div class="div__input__nombre">
+                    <input class="campo__input" type="text" name="nombre" id="nombre" placeholder="Tu nombre completo">
+                </div>
             </div>
 
             <div class="campo">
                 <label class="campo__label" for="email">Email</label>
-                <input class="campo__input" type="email" name="email" id="email" placeholder="Tu email">
+                <div class="div__input__email">
+                    <input class="campo__input" type="email" name="email" id="email" placeholder="Tu email">
+                </div>
             </div>
             <div class="campo">
                 <label for="telefono" class="campo__label">Telefono</label>
-                <input class="campo__input" type="tel" name="telefono" id="telefono"
-                    placeholder="Tu número de teléfono">
+                <div class="div__input__telefono">
+                    <input class="campo__input" type="tel" name="telefono" id="telefono"
+                        placeholder="Tu número de teléfono">
+                </div>
             </div>
 
             <div class="campo">
                 <label for="mensaje" class="campo__label">Mensaje</label>
-                <textarea class="campo__input" name="mensaje" id="mensaje" placeholder="Tu mensaje"></textarea>
+                <div class="div__input__mensaje">
+                    <textarea class="campo__input" name="mensaje" id="mensaje" placeholder="Tu mensaje"></textarea>
+                </div>
             </div>
 
             <button type="submit" class="boton boton--primario alinear-derecha">ENVIAR</button>
@@ -108,6 +116,8 @@
             </nav>
         </footer>
     </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

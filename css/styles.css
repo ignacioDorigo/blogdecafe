@@ -409,8 +409,14 @@ li {
         line-height: normal;
     }
 
-    .campo__input {
+    .campo div {
         flex-basis: calc(90% - 1rem);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .campo__input {
+        width: 100%;
     }
 
 }
@@ -444,4 +450,8 @@ textarea {
     .alinear-derecha {
         align-self: end;
     }
+}
+
+.error__texto {
+    color: red;
 }
